@@ -24,8 +24,9 @@ function App() {
 
           <Route path="/movies/:movieId" element={<MovieDetails />} />
           <Route path="/" element={<LandingPage />} />
+          <Route path="*" element={<Navigate replace to="/" />} />
 
-        </Routes>
+      </Routes>
       </main>
     
     </Router>
